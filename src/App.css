@@ -1,0 +1,115 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  max-height: 80vh; 
+  overflow-y: auto; 
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.ui.divider {
+  margin-bottom: 20px;
+}
+
+.ui.form .field {
+  margin-bottom: 15px;
+  overflow: visible; 
+}
+
+.ui.form .field label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.ui.form .field input,
+.ui.form .field select {
+  width: calc(100% - 20px);
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.ui.form .field input[type="button"] {
+  width: auto;
+  padding: 8px 15px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.ui.form .field input:focus,
+.ui.form .field select:focus {
+  border-color: #007bff;
+}
+
+.button {
+  padding: 12px 24px;
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+  margin: 10px;
+}
+
+.button:hover:not(:disabled) {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.button.center {
+  display: block;
+  margin: 20px auto; 
+}
+
+.ui.form p {
+  color: red;
+  margin: 5px 0;
+  font-size: 0.9em;
+  padding: 5px; 
+  box-sizing: border-box; 
+  white-space: normal; 
+  overflow: visible; 
+}
+
+.ui.message.success {
+  color: green;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+pre {
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 4px;
+  color: #333;
+  white-space: pre-wrap; 
+}
